@@ -1,6 +1,4 @@
 from copyreg import constructor
-import threading
-import os
 import random
 
 #easy
@@ -221,8 +219,6 @@ def createGame(desiredClueCount):
                     while verifyPosition(gameBoard, column, row) == False:
                         number = random.randint(0,9)
                         gameBoard[column][row] = number
-    #printGrid(gameBoard)
-    #print("clue count: {}".format(count))
     return gameBoard
 
 def createAndPlay():
@@ -264,7 +260,6 @@ def generateGame():
         board[p//side][p%side] = 0
 
     numSize = len(str(side))
-    #for line in board: print("["+"  ".join(f"{n or '0':{numSize}}" for n in line)+"]")
     return board
 
 def cleanPrint(board):
