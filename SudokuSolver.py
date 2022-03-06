@@ -306,4 +306,3 @@ def cleanPrint(board, solved):
 
 print(solve(blankGridEvil, 0, 0))
 #createAndPlay()
-#generateGame()
