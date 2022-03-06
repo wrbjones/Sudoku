@@ -305,8 +305,5 @@ def cleanPrint(board, solved):
         print([line2,line3,line4][(r%side==0)+(r%base==0)], "   --->   ", [line2,line3,line4][(r%side==0)+(r%base==0)])
 
 print(solve(blankGridEvil, 0, 0))
-#print(getFirstAvailableNumber(blankGrid, 0, 4))
-#print(checkGrid(testSolve))
-#36 / 41 / 28
 #createAndPlay()
 #generateGame()
